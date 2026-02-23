@@ -2,6 +2,7 @@
 
 Canonical shared surfaces:
 
+- `/specs/00_core/library_release_policy.md`
 - `/specs/05_libraries/**`
 - `/specs/06_overlays/**`
 

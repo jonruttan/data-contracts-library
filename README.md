@@ -9,3 +9,8 @@ Normative ownership split:
 - `data-contracts`: schema/contracts/governance authority for contract-spec
 - `dc-runner-spec`: runner behavior authority
 - `data-contracts-library`: shared libraries and runner overlays
+
+
+Library release policy:
+
+- `/specs/00_core/library_release_policy.md`
