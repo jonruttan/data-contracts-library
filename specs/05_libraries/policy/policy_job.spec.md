@@ -37,7 +37,7 @@ contracts:
       id: policy.job
       module: policy
       stability: alpha
-      owner: dc-runner-spec
+      owner: data-contracts-library
       tags:
       - policy
       - job

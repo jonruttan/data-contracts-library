@@ -44,7 +44,7 @@ contracts:
       id: policy.assertions
       module: policy
       stability: alpha
-      owner: dc-runner-spec
+      owner: data-contracts-library
       tags:
       - policy
       - assertions

@@ -1,16 +1,16 @@
 # data-contracts-library
 
-Canonical shared spec library for data-contracts ecosystems.
+Canonical reusable spec authority for the data-contracts ecosystem.
 
-This repository owns reusable policy/domain/spec-lang libraries and runner overlay specs.
+This repository owns shared libraries, runner behavior specs, runner overlays,
+and bundle-tooling spec contracts.
 
 Normative ownership split:
 
 - `data-contracts`: schema/contracts/governance authority for contract-spec
-- `dc-runner-spec`: runner behavior authority
-- `data-contracts-library`: shared libraries and runner overlays
-
+- `data-contracts-library`: reusable spec authority (runner behavior + overlays + shared libraries)
 
 Library release policy:
 
 - `/specs/00_core/library_release_policy.md`
+- `/specs/00_core/repo_migration_map.md`
