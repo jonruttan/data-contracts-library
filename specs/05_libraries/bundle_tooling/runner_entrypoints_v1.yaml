@@ -20,13 +20,93 @@ commands:
       - /.artifacts/job-hooks/DCLIB-BUNDLE-JOB-002.complete.json
     exit_codes:
       allowed: [0]
-  - id: bundler-check
-    cli: dc-runner bundler check
-    profile: bundler.check
+  - id: bundler-package-check
+    cli: dc-runner bundler package-check
+    profile: bundler.package_check
     visibility: top_level
     group: bundler
     source: bundler
     artifacts:
       - /.artifacts/job-hooks/DCLIB-BUNDLE-JOB-003.complete.json
+    exit_codes:
+      allowed: [0]
+  - id: bundler-list
+    cli: dc-runner bundler list
+    profile: bundler.list
+    visibility: top_level
+    group: bundler
+    source: bundler
+    artifacts:
+      - /.artifacts/job-hooks/DCLIB-BUNDLE-JOB-004.complete.json
+    exit_codes:
+      allowed: [0]
+  - id: bundler-info
+    cli: dc-runner bundler info
+    profile: bundler.info
+    visibility: top_level
+    group: bundler
+    source: bundler
+    artifacts:
+      - /.artifacts/job-hooks/DCLIB-BUNDLE-JOB-005.complete.json
+    exit_codes:
+      allowed: [0]
+  - id: bundler-install
+    cli: dc-runner bundler install
+    profile: bundler.install
+    visibility: top_level
+    group: bundler
+    source: bundler
+    artifacts:
+      - /.artifacts/job-hooks/DCLIB-BUNDLE-JOB-006.complete.json
+    exit_codes:
+      allowed: [0]
+  - id: bundler-install-check
+    cli: dc-runner bundler install-check
+    profile: bundler.install_check
+    visibility: top_level
+    group: bundler
+    source: bundler
+    artifacts:
+      - /.artifacts/job-hooks/DCLIB-BUNDLE-JOB-007.complete.json
+    exit_codes:
+      allowed: [0]
+  - id: bundler-bootstrap
+    cli: dc-runner bundler bootstrap
+    profile: bundler.bootstrap
+    visibility: top_level
+    group: bundler
+    source: bundler
+    artifacts:
+      - /.artifacts/job-hooks/DCLIB-BUNDLE-JOB-008.complete.json
+    exit_codes:
+      allowed: [0]
+  - id: bundler-bootstrap-check
+    cli: dc-runner bundler bootstrap-check
+    profile: bundler.bootstrap_check
+    visibility: top_level
+    group: bundler
+    source: bundler
+    artifacts:
+      - /.artifacts/job-hooks/DCLIB-BUNDLE-JOB-009.complete.json
+    exit_codes:
+      allowed: [0]
+  - id: bundler-outdated
+    cli: dc-runner bundler outdated
+    profile: bundler.outdated
+    visibility: top_level
+    group: bundler
+    source: bundler
+    artifacts:
+      - /.artifacts/job-hooks/DCLIB-BUNDLE-JOB-010.complete.json
+    exit_codes:
+      allowed: [0]
+  - id: bundler-upgrade
+    cli: dc-runner bundler upgrade
+    profile: bundler.upgrade
+    visibility: top_level
+    group: bundler
+    source: bundler
+    artifacts:
+      - /.artifacts/job-hooks/DCLIB-BUNDLE-JOB-011.complete.json
     exit_codes:
       allowed: [0]
