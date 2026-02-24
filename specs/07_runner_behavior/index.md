@@ -1,13 +1,19 @@
 # Runner Behavior
 
-Shared runner behavior authority moved to `data-contracts-runner`.
+Canonical reusable runner-behavior surfaces for the `data-contracts` ecosystem are split by ownership:
 
-Canonical shared runner surfaces:
-- `/Users/jon/Workspace/Development/data-contracts-runner/specs/07_runner_behavior/runner/**`
-- `/Users/jon/Workspace/Development/data-contracts-runner/specs/07_runner_behavior/contract_sets/shared/**`
-- `/Users/jon/Workspace/Development/data-contracts-runner/specs/07_runner_behavior/impl/shared/**`
+- Shared behavior authored in `data-contracts-runner`.
+- Shared reusable libraries and overlays in `data-contracts-library`.
+- Canonical review workflow assets in this repository subtree:
+  - `/specs/07_runner_behavior/review_workflow/index.md`
+  - `/specs/07_runner_behavior/review_workflow/prompts/*`
+  - `/specs/07_runner_behavior/review_workflow/templates/*`
+  - `/specs/07_runner_behavior/review_workflow/endpoints/*`
+  - `/specs/07_runner_behavior/review_workflow/review_variables.schema.md`
 
-Implementation-specific runner behavior remains in:
-- `/Users/jon/Workspace/Development/dc-runner-rust/specs/impl/rust/**`
-- `/Users/jon/Workspace/Development/dc-runner-python/specs/impl/python/**`
-- `/Users/jon/Workspace/Development/dc-runner-php/specs/impl/php/**`
+Implementation-specific runner behavior remains external:
+
+- `dc-runner-rust`
+- `dc-runner-python`
+- `dc-runner-php`
+- `data-contracts-runner`
